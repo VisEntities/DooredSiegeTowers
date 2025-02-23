@@ -11,7 +11,7 @@ using UnityEngine;
 namespace Oxide.Plugins
 {
     [Info("Doored Siege Towers", "VisEntities", "1.0.0")]
-    [Description(" ")]
+    [Description("Adds a door to siege towers automatically.")]
     public class DooredSiegeTowers : RustPlugin
     {
         #region Fields
@@ -115,7 +115,7 @@ namespace Oxide.Plugins
 
                 if (_config.DoorSkins != null && _config.DoorSkins.Count > 0)
                 {
-                    int randomIndex = UnityEngine.Random.Range(0, _config.DoorSkins.Count);
+                    int randomIndex = Random.Range(0, _config.DoorSkins.Count);
                     door.skinID = _config.DoorSkins[randomIndex];
                 }
 
